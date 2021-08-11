@@ -1,0 +1,33 @@
+hotel (String )	
+is_canceled (boolean)	
+lead_time (int)
+arrival_date_year(int)	
+arrival_date_month	(String )
+arrival_date_week_number(int )
+arrival_date_day_of_month(int)	
+stays_in_weekend_nights(int )
+stays_in_week_nights(int)	
+adults(int)	
+children(int)
+babies(int)
+meal(string)
+country(string)
+market_segment(string )	
+distribution_channel(string)	
+is_repeated_guest(boolean)	
+previous_cancellations(int)	
+previous_bookings_not_canceled(int)
+reservation_status_date : string : 17Oct14
+reservation_status : string : Check-Out, Canceled
+total_of_special_requests : int : 
+required_car_parking_spaces : int : 
+adr: float : 
+customer_type : string : Transient, Transient-Party
+days_in_waiting_list : int : 
+company : int : 
+agent : int : 
+deposit_type : string : No Deposit, Non Refund, Refundable
+booking_changes : int : 
+assigned_room_type : string : 
+reserved_room_type : string : 
+
