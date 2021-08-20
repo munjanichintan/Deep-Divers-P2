@@ -2,9 +2,17 @@
 2. How many company booked hotel rooms country wise
 3. which room most prefered by adults?
 4. What kind of rooms mostly booked by agents?
-5. In which month most of the orders are canceled?
+5. In which month most of the booking are canceled?
 6. Those customers who stayed weekend nights and weekday nights
-7. average leadtime in any week number?
-8. which room most prefered by people wh books hotel room?
-9. which agent booked most rooms?
+7. average leadtime in any week number in 2016?
+8. which room most prefered by people?
+9. top 3 agents who have booked the most hotel rooms.
 10. Which hotel room booked group by hotel type?
+11. Which meal type most choose by people country-wise?
+12. How many times hotel didn't assign room type as a reserved_type to customer year-wise
+13. many adults booked room in 2017.
+14. Average waiting days month-wise in year 2016
+15. In which month and year highest car parking spaces is required 
+16. find percentage of each type of customer_type?
+17. How many children were in hotel on 22-August-2015.
+18. 
