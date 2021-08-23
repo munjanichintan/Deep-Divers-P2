@@ -42,3 +42,15 @@ df.createOrReplaceTempView("hotel_booking")
 # 18. How many times hotel did not assign room type same as a reserved type to customers year-wise
 # q18 = spark.sql("select arrival_date_year, count(hotel) number_of_times from hotel_booking where reserved_room_type!=assigned_room_type group by arrival_date_year")
 # q18.show()
+
+# 19. How many adults booked room in 2017.
+# q19 = spark.sql("select count(adults) as No_of_Adults from hotel_booking where arrival_date_year=2017")
+# q19.show()
+
+# 22.  Summary of reservation status
+# q22 = spark.sql("select reservation_status from hotel_booking") 
+# q22.show()
+
+# 23. Select comapny whose lead time is minimum OR maximum OR <100 OR >100.
+# q23 = spark.sql("select company,lead_time from hotel_booking where lead lead_time>=100 and lead_time<=100")
+# q23.show()
