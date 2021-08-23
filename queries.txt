@@ -15,3 +15,6 @@
 15. In which month and year, the highest car parking space was required
 16. find percentage of each type of customer_type?
 17. How many children were in hotel on 22-August-2015.
+18. How many company arrived in 2015 from which country
+19. Summary of reservation status
+20. Select comapny whose lead time is minimum OR maximum OR <100 OR >100.
