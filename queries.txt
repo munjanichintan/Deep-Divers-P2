@@ -6,15 +6,19 @@
 6. number of customers who stayed weekend nights and weekday nights(atleast one time)
 7. average leadtime in any week number in 2016?
 8. which room most prefered by people?
-9. top 3 agents who have booked the most hotel rooms.
+9. Which country's people reuqested most spaecial request?
 10. list out all market segment and how many bookings lies in each market segment.
-11. Which meal type most choose by people country-wise?
-12. How many times hotel did not assign room type same as a reserved type to customers year-wise
-13. many adults booked room in 2017.
-14. Average waiting days month-wise in the year 2016
+11. How many children+baby stayed in hotel in USA?
+12. Which country has highest average adr(average daily rate)?
+13. top 3 agents who have booked the most hotel rooms.
+14. Which meal type most choose by people country-wise?
 15. In which month and year, the highest car parking space was required
 16. find percentage of each type of customer_type?
-17. How many children were in hotel on 22-August-2015.
-18. How many company arrived in 2015 from which country
-19. Summary of reservation status
-20. Select comapny whose lead time is minimum OR maximum OR <100 OR >100.
+17. Average waiting days month-wise in the year 2016
+18. How many times hotel did not assign room type same as a reserved type to customers year-wise
+19. How many adults booked room in 2017.
+20. How many children were in hotel on 22-August-2015.
+21. How many company arrived in 2015 from which country
+22. Summary of reservation status
+23. Select comapny whose lead time is minimum OR maximum OR <100 OR >100.
+24. In which month of 2016 room type 'A' is most booked.
