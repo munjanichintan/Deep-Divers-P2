@@ -51,6 +51,6 @@ df.createOrReplaceTempView("hotel_booking")
 # q22 = spark.sql("select reservation_status from hotel_booking") 
 # q22.show()
 
-# 23. Select comapny whose lead time is minimum OR maximum OR <100 OR >100.
-# q23 = spark.sql("select company,lead_time from hotel_booking where lead lead_time>=100 and lead_time<=100")
+# 23. Select comapny whose lead time is between 100 and 1000.
+# q23 = spark.sql("select company,lead_time from hotel_booking where lead lead_time>=100 and lead_time<=1000")
 # q23.show()
