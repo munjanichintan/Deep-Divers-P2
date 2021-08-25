@@ -27,6 +27,25 @@ df.createOrReplaceTempView("hotel_booking")
 # q10 = spark.sql("select market_segment, count(hotel) number_of_booking_lies_in_segment from hotel_booking group by market_segment")
 # q10.show()
 
+# 11. How many children+baby stayed in hotel in USA?
+# q11 = spark.sql(
+#     "select country, sum(children+babies) \
+#     from hotel_booking \
+#     where country='USA' \
+#     group by country"
+# )
+# q11.show()
+
+# 12. Which country has highest average adr(average daily rate)?
+# q12 = spark.sql(
+#     "select country, avg(adr) average_adr \
+#     from hotel_booking \
+#     group by country \
+#     order by average_adr desc \
+#     limit 1"
+# )
+# q12.show()
+
 # 13. top 3 agents who have booked the most hotel rooms.
 # q13 = spark.sql(
 #     "select agent, count(hotel) total_booking_by_agent \
