@@ -117,7 +117,7 @@ df.createOrReplaceTempView("hotel_booking")
 # 20. How many children were in hotel on 22-August-2015.
 # q23 = spark.sql("select count(children) \
 #       from hotel_booking \
-#       where arriva_date_year=2015 and arrival_date_month='August' and arrival_date_day_of_month=22) 
+#       where arrival_date_year=2015 and arrival_date_month='August' and arrival_date_day_of_month=22) 
 # q20.show()
 
 # 21.How many company arrived in 2015 from which country
