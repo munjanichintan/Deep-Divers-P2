@@ -44,7 +44,7 @@ df.createOrReplaceTempView("hotel_booking")
 # q18.show()
 
 # 19. How many adults booked room in 2017.
-# q19 = spark.sql("select count(adults) as No_of_Adults from hotel_booking where arrival_date_year=2017")
+# q19 = spark.sql("select sum(adults) as No_of_Adults from hotel_booking where arrival_date_year=2017")
 # q19.show()
 
 # 22.  Summary of reservation status
@@ -52,5 +52,5 @@ df.createOrReplaceTempView("hotel_booking")
 # q22.show()
 
 # 23. Select comapny whose lead time is between 100 and 1000.
-# q23 = spark.sql("select company,lead_time from hotel_booking where lead lead_time>=100 and lead_time<=1000")
+# q23 = spark.sql("select count(company) from hotel_booking where lead lead_time between 100 and 1000")
 # q23.show()
