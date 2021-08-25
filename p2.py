@@ -116,9 +116,6 @@ df.createOrReplaceTempView("hotel_booking")
 # q22 = spark.sql("select reservation_status from hotel_booking") 
 # q22.show()
 
-# 23. Select comapny whose lead time is between 100 and 1000.
-# q23 = spark.sql("select sum(company) from hotel_booking where lead lead_time between 100 and 1000")
-
 # 23. Select company whose lead time is between 100 and 1000.
 # q23 = spark.sql("select count(company) from hotel_booking where lead lead_time between 100 and 1000")
 # q23.show()
