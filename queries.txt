@@ -20,5 +20,5 @@
 20. How many children were in hotel on 22-August-2015.
 21. How many company arrived in 2015 from which country
 22. Summary of reservation status
-23. Select company whose lead time is minimum OR maximum OR <100 OR >100.
-24. In which month of 2016 room type 'A' is most booked.
+23. How many times does the company have a lead time between 100 and 1000
+24. In which month of 2016 reserved room type 'A' is most booked.

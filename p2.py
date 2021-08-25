@@ -109,13 +109,36 @@ df.createOrReplaceTempView("hotel_booking")
 # q18.show()
 
 # 19. How many adults booked room in 2017.
-# q19 = spark.sql("select sum(adults) as No_of_Adults from hotel_booking where arrival_date_year=2017")
+# q19 = spark.sql("select sum(adults) as No_of_Adults \
+#       from hotel_booking \
+#       where arrival_date_year=2017")
 # q19.show()
 
+# 20. How many children were in hotel on 22-August-2015.
+# q23 = spark.sql("select count(children) \
+#       from hotel_booking \
+#       where arriva_date_year=2015 and arrival_date_month='August' and arrival_date_day_of_month=22) 
+# q20.show()
+
+# 21.How many company arrived in 2015 from which country
+# q21 = spark.sql("select count(company) AS Company_Name,country \
+#       from Hotel_booking where arrival_date_year=2015 ")
+# q21.show()
+
 # 22.  Summary of reservation status
-# q22 = spark.sql("select reservation_status from hotel_booking") 
+# q22 = spark.sql("select reservation_status \
+#       from hotel_booking") 
 # q22.show()
 
-# 23. How many times does the company have a lead time between 100 and 1000?
-# q23 = spark.sql("select count(company) from hotel_booking where lead_time between 100 and 1000")
+# 23. How many times does the company have a lead time between 100 and 1000
+# q23 = spark.sql("select count(company) \
+#       from hotel_booking \
+#       where lead_time between 100 and 1000")
 # q23.show()
+
+# 24. In which month of 2016 reserved room type 'A' is most booked.
+# q24 = spar.sql("select month \
+#       from hotel_booking \
+#       where arrival_date_year=2016 and reserved_room_type='A' \
+#       order by reserved_room_type ASC")
+# q24.show()
