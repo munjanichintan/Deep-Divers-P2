@@ -19,6 +19,6 @@
 19. How many adults booked room in 2017.
 20. How many children were in hotel on 22-August-2015.
 21. How many company arrived in 2015 from which country
-22. Summary of reservation status
+22. How many people were Check-Out from the hotel on 10-March-2017.
 23. How many times does the company have a lead time between 100 and 1000
 24. In which month of 2016 reserved room type 'A' is most booked.
