@@ -39,6 +39,16 @@ df.createOrReplaceTempView("hotel_booking")
 # )
 # q3.show()
 
+# 4. What kind of rooms mostly booked by agents?
+# q4 = spark.sql(
+#     "select reserved_room_type, count(reserved_room_type) \
+#     from hotel_booking \
+#     where agent!='NULL' \
+#     group by reserved_room_type \
+#     limit 3"
+# )
+# q4.show()
+
 # 5. In which month most of the booking are canceled?
 # q5 = spark.sql(
 #     "select arrival_date_month, count(is_canceled) total_canceled_booking \
@@ -57,13 +67,23 @@ df.createOrReplaceTempView("hotel_booking")
 # )
 # q6.show()
 
+# average leadtime in any week number in 2016?
+# q7 = spark.sql(
+#     "select avg(lead_time) \
+#     from hotel_booking \
+#     where arrival_date_year=2016 and arrival_date_week_number=17"
+# )
+# q7.show()
+
 # 8. which room most prefered by people?
 # q8 = spark.sql(
 #     "select reserved_room_type, count(reserved_room_type) total_count \
 #     from hotel_booking \
-#     group by reserved_room_type"
+#     group by reserved_room_type \
+#     order by total_count desc \
+#     limit 1"
 # )
-# q8.show(50)
+# q8.show()
 
 # 9. Which country's people reuqested most spaecial request?
 # q9 = spark.sql(
@@ -191,16 +211,18 @@ df.createOrReplaceTempView("hotel_booking")
 # )
 # q21.show()
 
-# 22.  Summary of reservation status
+# 22. How many people were Check-Out from the hotel on 10-March-2017.
 # q22 = spark.sql(
-#     "select reservation_status \
-#     from hotel_booking"
+#     "select concat(arrival_date_day_of_month, '-', arrival_date_month, '-', arrival_date_year) as date, sum(adults+children+babies) as total_people \
+#     from hotel_booking \
+#     where arrival_date_year=2017 and arrival_date_month='March' and arrival_date_day_of_month=10 \
+#     group by arrival_date_year, arrival_date_month, arrival_date_day_of_month"
 # ) 
 # q22.show()
 
 # 23. How many times does the company have a lead time between 100 and 1000
 # q23 = spark.sql(
-#     "select company, count(company) \
+#     "select company, count(company) as total_company\
 #     from hotel_booking \
 #     where lead_time between 100 and 1000 \
 #     group by company")
@@ -208,7 +230,7 @@ df.createOrReplaceTempView("hotel_booking")
 
 # 24. In which month of 2016 reserved room type 'A' is most booked.
 # q24 = spark.sql(
-#     "select arrival_date_month, count(reserved_room_type) total_room\
+#     "select arrival_date_month, count(reserved_room_type) total_room \
 #     from hotel_booking \
 #     where arrival_date_year=2015 and reserved_room_type='A' \
 #     group by arrival_date_month \
