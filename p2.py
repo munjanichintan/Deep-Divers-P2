@@ -213,10 +213,10 @@ df.createOrReplaceTempView("hotel_booking")
 
 # 22. How many people were Check-Out from the hotel on 10-March-2017.
 # q22 = spark.sql(
-#     "select concat(arrival_date_day_of_month, '-', arrival_date_month, '-', arrival_date_year) as date, sum(adults+children+babies) as total_people \
+#     "select reservation_status_date, sum(adults+children+babies) as total_people \
 #     from hotel_booking \
-#     where arrival_date_year=2017 and arrival_date_month='March' and arrival_date_day_of_month=10 \
-#     group by arrival_date_year, arrival_date_month, arrival_date_day_of_month"
+#     where reservation_status_date='2017-03-10' \
+#     group by reservation_status_date"
 # ) 
 # q22.show()
 
