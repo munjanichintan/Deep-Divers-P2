@@ -215,7 +215,7 @@ df.createOrReplaceTempView("hotel_booking")
 # q22 = spark.sql(
 #     "select reservation_status_date, sum(adults+children+babies) as total_people \
 #     from hotel_booking \
-#     where reservation_status_date='2017-03-10' \
+#     where reservation_status_date='2017-03-10' and reservation_status='Check-Out' \
 #     group by reservation_status_date"
 # ) 
 # q22.show()
