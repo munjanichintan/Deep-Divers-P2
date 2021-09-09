@@ -41,7 +41,7 @@ A Hadoop ecosystem
 ```
 $ hdfs dfs -put ./filename <hdfs-path>
 ```
-4. Then, start executing queries which are present in python file.
+3. Then, start executing queries which are present in python file.
 Below command is used for executing python file.
 ```
 spark-submit <file-name>
