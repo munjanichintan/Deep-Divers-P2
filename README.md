@@ -34,8 +34,6 @@ A Hadoop ecosystem
   * Hortonworks Data Platform has to install.
   * Make sure all the services are started in the Ambari dashboard.
 
-## Contributors
-
 1. After logging into VM, clone the project onto local machine.
 2. Copy csv file from local machine to HDFS.
 ```
@@ -46,3 +44,8 @@ Below command is used for executing python file.
 ```
 spark-submit <file-name>
 ```
+## Contributors
+
+* Aman Sagar(AmanSagar009)
+* Chintan Munjani(munjanichintan123)
+* Jaydeep(jaydeep1009)
