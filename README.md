@@ -14,6 +14,7 @@ Creating Spark jobs in Python (using PySpark) to perform various analysis on a H
 List of features ready and TODOs for future development.
 
 Note: You can see all 24 queries in "queries.txt" file which is present in repository.
+
 Some example of queries..
 1. Which meal type most choose by people country-wise?
 2. find percentage of each type of customer_type?
